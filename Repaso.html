@@ -1,0 +1,349 @@
+<!-- El !DOCTYPE o tipo de documento es una etiqueta especial que se 
+    escribe en la primera línea del documento HTML. 
+    Debe ir especificado siempre para que el navegador sepa de que 
+    tipo de documento HTML se trata. -->
+<!DOCTYPE html>
+<!-- Documento -->
+<html lang="en">
+  <!-- Cuando hablamos de la etiqueta <head> de un documento HTML, 
+    muchas veces la denominamos cabecera HTML. Sin embargo, 
+    esta cabecera no es una parte visual de la página web, 
+    sino una parte de nuestro código HTML donde se incluyen ciertas 
+    etiquetas de metadatos, es decir, unas etiquetas que establecen 
+    ciertos datos que no tienen que verse necesariamente 
+    de forma visual. -->
+  <head>
+    <!-- <base href="https://lenguajehtml.com/assets/" /> -->
+    <!-- cÃ³digo o tambiÃ©n -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En esta página encontrarás documentación sobre HTML."
+    />
+    <meta
+      name="keywords"
+      content="html, lenguaje, lenguaje de marcado, código html, etiqueta,UAO"
+    />
+    <meta name="author" content="RIcHo" />
+    <meta name="application-name" content="web_development" />
+    <meta name="generator" content="VSCode" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:creator" content="@RB" />
+    <meta property="twitter:title" content="Título" />
+    <meta
+      property="twitter:url"
+      content="https://pagina.com/posts/32/titulo-del-post"
+    />
+    <meta
+      property="twitter:image"
+      content="https://pagina.com/assets/post-32.jpg"
+    />
+    <meta property="twitter:description" content="Descripción" />
+
+    <!-- titulo de la pagina -->
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="https://i02.appmifile.com/i18n/scm/favicon.ico"
+    />
+  </head>
+  <body>
+    <!-- div -->
+    <div class="movie-data">
+      <h2>Interstellar</h2>
+      <p class="description">
+        <strong>Interstellar</strong> es una película dirigida por
+        <strong>Christopher Nolan</strong>.
+      </p>
+    </div>
+    <!-- ul y ol -->
+    <!-- 1 | a | A | i | I	Lista con números enteros, letras o números romanos (minúsculas o mayúsculas). -->
+    <ol type="I" start="5" reversed>
+      <li>Primer ítem.</li>
+      <li>Segundo ítem.</li>
+      <li>Tercer ítem.</li>
+    </ol>
+    <ul>
+      <li>Primer ítem.</li>
+      <li>Segundo ítem.</li>
+      <li>Tercer ítem.</li>
+    </ul>
+    <!-- blockquote -->
+    <blockquote cite="http://es.wikiquote.org/wiki/Fight_Club">
+      <p>
+        La primera regla del Club de la Lucha es: Nadie habla sobre el Club de
+        la Lucha.
+      </p>
+      <footer>
+        <cite class="author">Tyler Durden</cite> en
+        <cite class="title">El Club de la Lucha</cite>
+      </footer>
+    </blockquote>
+    <!-- pre -->
+    <pre>
+      function mensaje(str) {
+        console.log(str);    hjhjhhjh
+      }
+      </pre
+    >
+    <!-- code -->
+    <code> function mensaje(str) { console.log(str); } </code>
+    <!-- img -->
+    <!-- <img src="logo.png" alt="Logo de HTML5"> -->
+    <img src="https://lenguajehtml.com/assets/logo.png" alt="Logo de HTML5" />
+    <!-- <img src="assets/logo.png" alt="Logo de HTML5" /> -->
+
+    <!-- video -->
+    <video width="400" controls>
+      <source src="assets/conejo.mp4" type="video/mp4" />
+      <source src="conejo.ogg" type="video/ogg" />
+      Your browser does not support HTML video.
+    </video>
+    <!-- audio -->
+    <audio controls>
+      <source src="assets/horse.ogm" type="audio/ogg" />
+      <source src="horse.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <!-- iframe -->
+    <iframe
+      src="https://www.youtube.com/embed/Imeq3GeRttw"
+      width="560"
+      height="315"
+    >
+    </iframe>
+
+    <a href="https://www.bing.com/" target="marco">Abrir buscador Bing</a>
+
+    <iframe
+      name="marco"
+      width="100%"
+      height="450"
+      src="https://www.youtube.com/embed/Imeq3GeRttw"
+    >
+    </iframe>
+
+    <iframe
+      src="https://www.bing.com/"
+      srcdoc="<p>¡Hola! ¡Soy el <strong>texto del iframe</strong>!</p>"
+    >
+    </iframe>
+
+    <!-- a -->
+    <p>
+      Puedes visitar mi página web en
+      <a href="https://www.linkedin.com/in/ricardo-bejarano-973833b1/"
+        >Ricardo Bejarano</a
+      >.
+    </p>
+    <p>
+      Más información sobre productos informáticos [<a
+        href="assets/logo.png"
+        download="w3logo"
+        >Descargar productos</a
+      >].
+    </p>
+
+    <!-- strong / b-->
+    <p><strong>Manz</strong> es un streamer de desarrollo de Twitch.</p>
+    <!-- em / i -->
+    <p>Javascript es el <em>mejor</em> lenguaje de programación para la web.</p>
+    <!-- mark Resaltador / u-->
+    <p>
+      Este texto, inicialmente no resaltado, <mark>está ahora marcado</mark>.
+    </p>
+    <!-- s / strike -->
+    <p>Precio de subscripción: <s>5.99€</s> <strong>¡3.99€!</strong></p>
+    <!-- span -->
+    <p>
+      Este <strong>párrafo</strong> de texto tiene
+      <span>algunos fragmentos de texto</span> que mantienen su
+      <span>disposición original</span>.
+      <!-- <span>algunos fragmentos de texto</span> que mantienen su
+      <span>disposición original</span>. -->
+    </p>
+    <!-- sup -->
+    <p>El resultado de 24<sup>2</sup> es <strong>576</strong>.</p>
+    <!-- sub -->
+    <p>
+      El resultado queda guardado en la variable <var>x<sub>t</sub></var
+      >.
+    </p>
+    <!-- small -->
+    <p>
+      Para abrir este archivo necesitarás el programa <strong>rb9000</strong>.
+      <small>Es necesario 10GB disponibles en disco.</small>
+    </p>
+    <!-- br -->
+    <p>Hola a todos.</p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>Esta línea ahora está colocada donde debe estar.</p>
+    <!-- kbd -->
+    <p>
+      Para abrir una nueva pestaña en el navegador, pulsa la combinación de
+      teclas <kbd>CTRL</kbd>+<kbd>T</kbd>.
+    </p>
+    <!-- abbr -->
+    <p>El término <abbr>Km</abbr> es una unidad de longitud.</p>
+    <!-- dfn -->
+    <p>El término <dfn>Kilómetro</dfn> es una unidad de longitud.</p>
+    <!-- time -->
+    <p>Mañana es día <time>2024-12-25</time>.</p>
+    <p>
+      <time datetime="2024-01-04">4 de Enero de 2024</time>
+    </p>
+
+    <!-- table -->
+    <table>
+      <!-- Fila de la cabecera -->
+      <tr>
+        <th>Título columna 1</th>
+        <!-- Celda cabecera de la columna 1 -->
+        <th>Título columna 2</th>
+        <!-- Celda cabecera de la columna 2 -->
+        <th>Título columna 3</th>
+        <!-- Celda cabecera de la columna 3 -->
+      </tr>
+      <!-- Primera fila -->
+      <tr>
+        <td>Celda 1x1</td>
+        <!-- Primera celda de la primera fila -->
+        <td>Celda 2x1</td>
+        <!-- Segunda celda de la primera fila -->
+        <td>Celda 3x1</td>
+        <!-- Tercera celda de la primera fila -->
+      </tr>
+      <!-- Segunda fila -->
+      <tr>
+        <td>Celda 1x2</td>
+        <!-- Primera celda de la segunda fila -->
+        <td>Celda 2x2</td>
+        <!-- Segunda celda de la segunda fila -->
+        <td>Celda 3x2</td>
+        <!-- Tercera celda de la segunda fila -->
+      </tr>
+    </table>
+
+    <!-- inputs -->
+    <input type="text" />
+    <input type="search" />
+    <input type="tel" />
+    <input type="url" />
+    <input type="email" />
+    <input type="password" />
+    <input type="hidden" />
+    <input type="range" value="10" />
+    <form method="post" action="/send/">
+      <div>Nombre: <input name="nickname" /></div>
+      <textarea
+        name="text"
+        cols="32"
+        rows="10"
+        placeholder="Queridos Reyes Magos, este año me he portado muy bien..."
+      ></textarea>
+    </form>
+    <!-- number -->
+    <input
+      type="range"
+      value="5.0"
+      onInput="this.nextElementSibling.value = this.value"
+    />
+    <output>5.0</output>
+
+    Un valor numérico:
+    <input type="number" value="25" min="10" max="50" />
+
+    <!-- fechas -->
+    <input type="date" />
+    <input type="month" />
+    <input type="week" />
+    <input type="time" />
+    <input type="datetime-local" />
+
+    <!-- checkbox -->
+    <input type="checkbox" name="username-enabled" checked /> Mostrar nombre
+    real de usuario <input type="checkbox" name="nickname-enabled" /> Mostrar
+    nick de usuario
+
+    <input type="radio" name="category" value="user" checked /> Particular
+    <input type="radio" name="category" value="business" /> Empresa
+    <!-- colors -->
+    <input type="color" value="#1BF44A" />
+    <!-- select -->
+    <form method="post" action="/send/">
+      Selecciona la opción deseada:
+      <select>
+        <option disabled selected>-Elige una opción-</option>
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+        <option value="3">Opción 3</option>
+        <option value="4">Opción 4</option>
+        <option value="5">Opción 5</option>
+      </select>
+    </form>
+
+    <form method="post" action="/send/">
+      Selecciona la opción deseada:
+      <select>
+        <optgroup label="Categoría 1">
+          <option value="1">Opción 1</option>
+          <option value="2">Opción 2</option>
+        </optgroup>
+        <optgroup label="Categoría 2">
+          <option value="3">Opción 3</option>
+          <option value="4">Opción 4</option>
+          <option value="5">Opción 5</option>
+        </optgroup>
+      </select>
+    </form>
+    <form method="post" action="/send/">
+      Selecciona la opción deseada:
+      <select multiple>
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+        <option value="3">Opción 3</option>
+        <option value="4">Opción 4</option>
+        <option value="5">Opción 5</option>
+      </select>
+    </form>
+    <!-- datalist -->
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input
+      list="ice-cream-flavors"
+      id="ice-cream-choice"
+      name="ice-cream-choice"
+    />
+
+    <datalist id="ice-cream-flavors">
+      <option value="Chocolate"></option>
+      <option value="Coconut"></option>
+      <option value="Mint"></option>
+      <option value="Strawberry"></option>
+      <option value="Vanilla"></option>
+    </datalist>
+
+    <!-- input file -->
+    <form method="post" action="/send/" enctype="multipart/form-data">
+      Selecciona varias fotos para enviar:
+      <input type="file" accept="image/jpeg" multiple />
+    </form>
+    <!-- submit -->
+    <form method="post" action="/">
+      <fieldset>
+        <legend>Soy la legenda</legend>
+        Usuario:
+        <input name="username" required />
+      </fieldset>
+
+      <input type="button" value="Obtener nick" />
+      <input type="submit" value="Enviar formulario" />
+      <input type="reset" value="Borrar formulario" />
+    </form>
+  </body>
+</html>
